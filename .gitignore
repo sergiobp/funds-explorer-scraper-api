@@ -1,5 +1,5 @@
 /.venv
-/.env*
+/.env
 /.ruff_cache
 /dist
 __pycache__
