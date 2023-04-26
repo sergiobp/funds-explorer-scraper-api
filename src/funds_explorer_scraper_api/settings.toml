@@ -1,0 +1,20 @@
+[scraper]
+default_user_agent = """\
+    Mozilla/5.0 (Windows NT 10.0; Win64; x64) \
+    AppleWebKit/537.36 (KHTML, like Gecko) \
+    Chrome/111.0.0.0 Safari/537.36\
+"""
+fii_data_endpoint = "https://www.fundsexplorer.com.br/funds/{code}"
+
+[scraper.xpath]
+code = "//*[@id='head']/div/div/div/div[2]/h1"
+description = "//*[@id='head']/div/div/div/h3"
+price = "//*[@id='stock-price']/span[1]"
+variation = "//*[@id='stock-price']/span[2]"
+daily_liquidity = "//*[@id='main-indicators-carousel']/div[1]/span[2]"
+last_yield = "//*[@id='main-indicators-carousel']/div[2]/span[2]"
+dividend_yield = "//*[@id='main-indicators-carousel']/div[3]/span[2]"
+net_worth = "//*[@id='main-indicators-carousel']/div[4]/span[2]"
+equity_value = "//*[@id='main-indicators-carousel']/div[5]/span[2]"
+month_profitability = "//*[@id='main-indicators-carousel']/div[6]/span[2]"
+pvp = "//*[@id='main-indicators-carousel']/div[7]/span[2]"
