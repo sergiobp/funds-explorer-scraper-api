@@ -17,6 +17,11 @@ class FII(TypedDict):
     equity_value: float
     month_profitability: float
     pvp: float
+    cnpj: str
+    segment: str
+    gestao: str
+    taxa: str
+
 
 
 def parse(fii: FII) -> FII:
